@@ -1,5 +1,5 @@
 {
-	"name": "lagan/string",
+	"name": "lagan/string-property-controller",
 	"type": "library",
 	"description": "Controller for the Lagan string property.",
 	"keywords": ["lagan","string","property","controller"],
@@ -11,5 +11,8 @@
 			"homepage": "http://www.hoverkraft.nl",
 			"role": "Developer"
 		}
-	]
+	],
+	"require": {
+		"php": ">=5.5.0"
+	}
 }
