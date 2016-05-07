@@ -1,7 +1,7 @@
 [<img src="https://cdn.rawgit.com/lutsen/lagan/master/lagan-logo.svg" width="100" alt="Lagan">](https://github.com/lutsen/lagan)
 
-Lagan String Property
-=====================
+Lagan String Property Controller
+================================
 
 Controller for the Lagan String property.
 
