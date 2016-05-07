@@ -1,0 +1,15 @@
+{
+	"name": "lagan/string",
+	"type": "library",
+	"description": "Controller for the Lagan string property.",
+	"keywords": ["lagan","string","property","controller"],
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Lútsen Stellingwerff",
+			"email": "lutsenstellingwerff@gmail.com",
+			"homepage": "http://www.hoverkraft.nl",
+			"role": "Developer"
+		}
+	]
+}
