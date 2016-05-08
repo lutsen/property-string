@@ -10,6 +10,6 @@ namespace Lagan\Property;
  * To be used with Lagan: https://github.com/lutsen/lagan
  */
 
-class String {}
+class Str {}
 
 ?>
