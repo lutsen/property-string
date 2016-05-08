@@ -17,7 +17,7 @@
 	},
     "autoload": {
         "psr-4": {
-            "Lagan\\Property\\Str": "Str.php"
+            "Lagan\\Property\\": "Str.php"
         }
     }
 }
