@@ -1,5 +1,5 @@
 {
-	"name": "lagan/string-property-controller",
+	"name": "lagan/property-string",
 	"type": "library",
 	"description": "Controller for the Lagan string property.",
 	"keywords": ["lagan","string","property","controller"],
@@ -17,7 +17,7 @@
 	},
     "autoload": {
         "psr-4": {
-            "Lagan\\Property\\": "/"
+            "Lagan\\Property\\": "src/"
         }
     }
 }
