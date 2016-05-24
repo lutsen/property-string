@@ -2,6 +2,8 @@
 
 namespace Lagan\Property;
 
+use Sirius\Validation\Validator;
+
 /**
  * Controller for the Lagan string property.
  * Doesn't do anything.
@@ -10,6 +12,37 @@ namespace Lagan\Property;
  * To be used with Lagan: https://github.com/lutsen/lagan
  */
 
-class Str {}
+class Str {
+
+	/**
+	 * The set method is executed each time a property with this type is set.
+	 *
+	 * @param bean		$bean		The Redbean bean object with the property.
+	 * @param array		$property	Lagan model property arrray.
+	 * @param string	$new_value	The input string of this property.
+	 *
+	 * @return string	The validated string.
+	 */
+	public function set($bean, $property, $new_value) {
+
+		if ( $property['validate'] ) {
+
+			$validator = new Validator();
+			$validator->add( [ $property['name'] => $property['validate'] ] ); // Validator rule(s) need to be an array
+
+			if ( $validator->validate( [ $property['name'] => $new_value ] ) ) { // Validator needs an array as input
+				return $new_value;
+			} else {
+				$messages = $validator->getMessages();
+				throw new \Exception( 'Vaildation error. ' . implode( ', ', $messages[ $property['name'] ] ) );
+			}
+
+		} else {
+			return $new_value;
+		}
+
+	}
+
+}
 
 ?>

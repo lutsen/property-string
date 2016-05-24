@@ -1,4 +1,4 @@
-{
+	{
 	"name": "lagan/property-string",
 	"type": "library",
 	"description": "Controller for the Lagan string property.",
@@ -13,7 +13,8 @@
 		}
 	],
 	"require": {
-		"php": ">=5.5.0"
+		"php": ">=5.5.0",
+		"sirius/validation": "^2.0"
 	},
     "autoload": {
         "psr-4": {
