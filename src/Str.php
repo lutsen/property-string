@@ -6,7 +6,7 @@ use Sirius\Validation\Validator;
 
 /**
  * Controller for the Lagan string property.
- * Doesn't do anything.
+ * Uses the Siriusphp validation library to validate strings.
  *
  * A property type controller can contain a set, read, delete and options method. All methods are optional.
  * To be used with Lagan: https://github.com/lutsen/lagan
