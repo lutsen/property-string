@@ -25,7 +25,7 @@ class Str {
 	 */
 	public function set($bean, $property, $new_value) {
 
-		if ( $property['validate'] ) {
+		if ( isset( $property['validate'] ) ) {
 
 			$validator = new Validator();
 			$validator->add( [ $property['name'] => $property['validate'] ] ); // Validator rule(s) need to be an array
