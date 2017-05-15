@@ -34,7 +34,7 @@ class Str {
 				return $new_value;
 			} else {
 				$messages = $validator->getMessages();
-				throw new \Exception( 'Vaildation error. ' . implode( ', ', $messages[ $property['name'] ] ) );
+				throw new \Exception( $property['description'].' validation error. ' . implode( ', ', $messages[ $property['name'] ] ) );
 			}
 
 		} else {
